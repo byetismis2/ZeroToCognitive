@@ -50,6 +50,7 @@ app.use(bodyParser.json());
 
 app.use('/', require("./controller/restapi/router"));
 
+
 http.createServer(app).listen(app.get('port'),
     function(req, res) {
         console.log(app.get('appName')+' is listening on port: ' + app.get('port'));
